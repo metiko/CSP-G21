@@ -1,6 +1,6 @@
-![HERO](<Architectural diagram.jpeg>)
-
 # ALTSCHOOL AFRICA CAPSTONE PROJECT GROUP 21
+
+![HERO](<Architectural diagram.jpeg>)
 
 ## Description
 
