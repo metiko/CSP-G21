@@ -12,7 +12,7 @@ This GitHub repository contains all the code necessary to deploy this applicatio
 
 - [Team Member 1](https://github.com/teammember1)
 - [Prince Onyeanuna](https://github.com/Aahil13)
-- [Team Member 3](https://github.com/teammember3)
+- [Oluwaseyi akinnawo](https://github.com/seyicodes)
 
 ## How to Use
 
