@@ -46,7 +46,7 @@ This GitHub repository contains all the code necessary to deploy this applicatio
 4. Start the application using Docker Compose:
 
     ```shell
-    docker-compose up -d
+    docker-compose -f docker-compose.yml up -d
     ```
 
 5. Access the WordPress application:
