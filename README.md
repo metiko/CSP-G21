@@ -50,7 +50,7 @@ This GitHub repository contains all the code necessary to deploy this applicatio
 
 5. Access the WordPress application:
 
-    Open your browser and visit http://localhost:8080 to access the WordPress site.
+    Open your browser and visit http://[ip-address]:8080 to access the WordPress site.
 
 6. Complete the WordPress setup:
 
