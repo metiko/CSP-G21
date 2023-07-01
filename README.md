@@ -9,8 +9,7 @@ The project aims to deploy a scalable and secure **WordPress application** infra
 This GitHub repository contains all the code necessary to deploy this application.
 
 ## Team Members
-
-- [Team Member 1](https://github.com/teammember1)
+- [Okwesirieze Amadi](https://github.com/AOKingsax)
 - [Prince Onyeanuna](https://github.com/Aahil13)
 - [Oluwaseyi akinnawo](https://github.com/seyicodes)
 - [Ayodeji Hamzat](https://github.com/DejiDavid)
@@ -51,7 +50,7 @@ This GitHub repository contains all the code necessary to deploy this applicatio
 
 5. Access the WordPress application:
 
-    Open your browser and visit http://localhost:8080 to access the WordPress site.
+    Open your browser and visit http://[ip-address]:8080 to access the WordPress site.
 
 6. Complete the WordPress setup:
 
