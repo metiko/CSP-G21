@@ -22,7 +22,7 @@ Here, ansible was used to install docker and docker-compose. The docker-compose 
     sudo apt install ansible -y
     ```
 4. (a) The .env file in roles/wordpress/files/.env is encrypted, so you have to create yours  
-   (b) Set up the inventory.txt file with your slaves
+   (b) Set up the inventory.txt file with your slaves  
    (c) Provide the private_key_file path in the ansible.cfg 
 
 5. Run the ansible playbook command
@@ -32,7 +32,7 @@ Here, ansible was used to install docker and docker-compose. The docker-compose 
 
 6. Access the wordpress application
 
-    Open your browser and visit http://[ip-address]:8080 to access the WordPress site.
+    Open your browser and visit http://[ip-address] to access the WordPress site.
 
 7. Complete the WordPress setup:
 
