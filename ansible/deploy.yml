@@ -1,0 +1,7 @@
+- name: wordpress site
+  become: true
+  hosts: all
+  roles:
+    - docker
+    - docker_compose
+    - wordpress

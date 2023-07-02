@@ -1,0 +1,41 @@
+version: "3" 
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    env_file: .env
+    environment:
+      MYSQL_ROOT_PASSWORD: "{{ ROOT_PASSWORD }}"
+      MYSQL_DATABASE: "{{ DATABASE_NAME }}"
+      MYSQL_USER: "{{ USER }}"
+      MYSQL_PASSWORD: "{{ USER_PASSWORD }}"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    env_file: .env
+    environment:
+      PMA_HOST: db
+      PMA_USER: "{{ USER }}"
+      PMA_PASSWORD: "{{ USER_PASSWORD }}"
+    ports:
+      - "8080:80"
+    
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    restart: always
+    ports:
+      - "80:80"
+    env_file: .env
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: "{{ USER }}"
+      WORDPRESS_DB_PASSWORD: "{{ USER_PASSWORD }}"
+      WORDPRESS_DB_NAME: "{{ DATABASE_NAME }}"
+    volumes:
+      ["./:/var/www/html"]
+volumes:
+  mysql: {}

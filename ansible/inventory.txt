@@ -1,0 +1,2 @@
+[wordpress_servers]
+13.40.189.52 ansible_ssh_user='ubuntu'
