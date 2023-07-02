@@ -1,0 +1,37 @@
+- name: Install docker packages
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - software-properties-common
+
+- name: Add Docker s official GPG key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: Set up the stable repository
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable
+    state: present
+    update_cache: yes
+
+- name: Update apt packages
+  apt:
+    update_cache: yes
+
+- name: Install docker
+  apt:
+    name: docker-ce
+    state: present
+    update_cache: yes
+
+- name: Add remote "ubuntu" user to "docker" group
+  user:
+    name: "ubuntu"
+    group: "docker"
+    append: yes
