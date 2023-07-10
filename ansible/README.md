@@ -1,7 +1,7 @@
 ## INSTALLING WORDPRESS DOCKER IMAGE WITH ANSIBLE
 ---
 
-Here, ansible was used to install docker and docker-compose. The docker-compose file was gotten from official wordpress docker image repository and ansible vault was used to encrypt the environment variable.
+Here, ansible was used to install docker and docker-compose. The docker-compose file was gotten from official wordpress docker image repository
 
 ## STEPS
 ---
