@@ -1,7 +1,15 @@
-- name: wordpress site
+- name: Wordpress and Node Exporter
   become: true
-  hosts: all
+  hosts: node-servers
   roles:
     - docker
     - docker_compose
     - wordpress
+    - node_exporter
+
+- name: Prometheus and Grafana
+  become: true
+  hosts: monitor-server
+  roles:
+    - prometheus
+    - grafana
