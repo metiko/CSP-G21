@@ -1,2 +1,6 @@
-[wordpress_servers]
-13.40.189.52 ansible_ssh_user='ubuntu'
+[monitor-server]
+[ip-address] ansible_ssh_user='ubuntu'
+
+[node-servers]
+[ip-address] ansible_ssh_user='ubuntu'
+[ip-address] ansible_ssh_user='ubuntu'
