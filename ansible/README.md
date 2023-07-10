@@ -21,8 +21,8 @@ Here, ansible was used to install docker and docker-compose. The docker-compose 
     ```shell
     sudo apt install ansible -y
     ```
-4. (a) The .env file in roles/wordpress/files/.env is encrypted, so you have to create yours  
-   (b) Set up the inventory.txt file with your slaves  
+4. (a) Fill out the configuration in the .env file located at roles/wordpress/files/.env  
+   (b) Set up the inventory.txt file with prometheus and grafana instance under monitor-server and wordpress instances under Node-servers  
    (c) Provide the private_key_file path in the ansible.cfg 
 
 5. Run the ansible playbook command
@@ -32,11 +32,24 @@ Here, ansible was used to install docker and docker-compose. The docker-compose 
 
 6. Access the wordpress application
 
-    Open your browser and visit http://[ip-address] to access the WordPress site.
+    Open your browser and visit http://[Node-servers-ip-address] to access the WordPress site.
 
 7. Complete the WordPress setup:
 
     Follow the on-screen instructions to set up your WordPress instance, including database configuration and administrator account creation.
+
+8. Access prometheus
+
+    Open your browser and visit http://[monitor-server-ip-address]:9090  
+
+9. Access grafana
+
+    Open your browser and visit http://[Node-servers-ip-address]:3000
+
+    **user** is admin, **password** is located at roles/grafana/defaults/main.yml
+
+10. Go to AWS security group and open port 3000 and 9090
+
 ---
 
 ## Additional Notes
