@@ -21,7 +21,7 @@ Here, ansible was used to install docker and docker-compose. The docker-compose 
     ```shell
     sudo apt install ansible -y
     ```
-4. (a) Fill out the configuration in the .env file located at roles/wordpress/files/.env  
+4. (a) Fill out the configuration in the env-file located at roles/wordpress/files/env-file and rename to .env file   
    (b) Set up the inventory.txt file with prometheus and grafana instance under monitor-server and wordpress instances under Node-servers  
    (c) Provide the private_key_file path in the ansible.cfg 
 
