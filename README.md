@@ -13,7 +13,7 @@ This GitHub repository contains all the code necessary to deploy this applicatio
 - [Prince Onyeanuna](https://github.com/Aahil13)
 - [Oluwaseyi akinnawo](https://github.com/seyicodes)
 - [Ayodeji Hamzat](https://github.com/DejiDavid)
-
+- [Olwatuyi Adora](https://github.com/Dora2yee)
 ## How to Use
 
 ### Prerequisites
