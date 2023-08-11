@@ -1,0 +1,41 @@
+######################################################################################
+#                                       VARIABLES
+######################################################################################
+
+variable "region" {
+  type    = string
+  default = ""
+}
+
+variable "availablity_zone1" {
+  type    = string
+  default = ""
+}
+
+variable "availablity_zone2" {
+  type    = string
+  default = ""
+}
+
+variable "keypair" {
+  type    = string
+  default = ""
+}
+
+variable "instance_type" {
+  type    = string
+  default = ""
+}
+
+variable "image_id" {
+  type    = string
+  default = ""
+}
+
+variable "cidr_block" {
+  type    = string
+  default = ""
+}
+
+
+
